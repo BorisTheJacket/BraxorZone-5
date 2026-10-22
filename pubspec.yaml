@@ -1,0 +1,57 @@
+name: braxor_zone
+description: "BraxorZone - Premium Billiard Club Network"
+publish_to: 'none'
+version: 1.0.1+2
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^7.4.2
+  smooth_page_indicator: ^1.1.0
+  google_fonts: ^6.2.1
+  provider: ^6.1.2
+  shared_preferences: ^2.5.3
+  permission_handler: ^11.3.1
+  webview_flutter: ^4.10.0
+  webview_flutter_android: ^4.12.0
+  webview_flutter_wkwebview: ^3.16.2
+  connectivity_plus: ^6.1.1
+  http: ^1.2.2
+  onesignal_flutter: ^5.2.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#0A0D0A"
+  adaptive_icon_foreground: "assets/images/logo.png"
+  min_sdk_android: 21
+
+flutter:
+  # OneSignal's notification extension pulls OneSignal in via CocoaPods; with
+  # SwiftPM also enabled the same frameworks get embedded twice in Runner.app.
+  config:
+    enable-swift-package-manager: false
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/backgrounds/
+    - assets/icons/
+    - assets/banners/
+    - assets/tiers/
+    - assets/missions/
+    - assets/prices/
+    - assets/clubs/
+    - assets/avatars/
